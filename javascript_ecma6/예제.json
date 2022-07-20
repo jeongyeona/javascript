@@ -1,0 +1,26 @@
+JSON 형식
+
+{"name": "김정연", "addr" : "의정부", "likeFOOD": ["삼겹살", "회", "두부김치"]}
+
+XML 형식
+
+<info>
+    <name>김정연</name>
+    <addr>의정부</addr>
+    <like-foods>
+        <food value>삼겹살</food value>
+        <food value>회</food value>
+        <food value>두부김치</food value>
+    </like-foods>
+</info>
+
+or
+
+<info>
+    <person name="김구라" addr="노량진"/>
+    <like-foods>
+        <item name="삼겹살"/>
+        <item name="회"/>
+        <item name="두부김치"/>
+    <like-foods>
+</info>

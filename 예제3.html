@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_if2.html</title>
+</head>
+<body>
+    <input type="text" id="input1">
+    <button id="Btn">판별하기</button>
+    <p id="p2"></p>
+    <script>
+        /*
+            숫자를 입력하고 "판별하기" 버튼을 누르면 입력한 숫자가 
+            양수이면 p 요소에 "양수 입니다."
+            그렇지 않으면 p 요소에 "양수가 아닙니다."
+            를 출력하는 프로그래밍을 해 보세요.
+        */
+        let divs=document.querySelector("#Btn");
+
+        divs.addEventListener("click", function(){
+            let msg= Number(document.querySelector("#input1").value);
+            if(msg>0){
+                document.querySelector("#p2").innerText="양수 입니다.";
+            }else{
+                document.querySelector("#p2").innerText= "양수가 아닙니다."
+            };
+        });
+    </script>
+</body>
+</html>

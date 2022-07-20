@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_createElement.html</title>
+    <style>
+        #divs{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button ip="Btn">버튼</button>
+<h1 id="divs">gkak</h1>
+    <script>
+    this;
+
+    let lis=document.querySelectorAll("#divs");
+        for(let i=0; i<lis.length; i++){
+            lis[i].addEventListener("click", function(){
+                let isDelete=confirm(this.innerText+" 를(을) 삭제 하시겠습니까?");
+                if(isDelete){
+                    this.remove();
+                }         
+            });
+        }
+    </script>
+</body>
+</html>
